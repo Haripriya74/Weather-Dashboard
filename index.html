@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skyly - Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="header">
+
+            <div>
+                <p class="label">WEATHER TODAY</p>
+                <h1>Skyly</h1>
+            </div>
+
+            <button id="themeBtn" class="theme-btn">🌙</button>
+
+        </header>
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search for a city..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+        <section class="weather-card">
+
+            <div class="location">
+
+                <div>
+                    <p class="label">CURRENT LOCATION</p>
+
+                    <h2 id="cityName">
+                        Chennai
+                    </h2>
+
+                    <p id="date">
+                        Thursday, 1 October
+                    </p>
+                </div>
+
+                <div class="weather-icon" id="weatherIcon">
+                    ☀️
+                </div>
+
+            </div>
+
+
+            <div class="temperature">
+
+                <h3 id="temperature">
+                    29°
+                </h3>
+
+                <p id="condition">
+                    Clear Sky
+                </p>
+
+            </div>
+
+
+            <div class="weather-details">
+
+                <div>
+                    <span>💧</span>
+
+                    <p>Humidity</p>
+
+                    <strong id="humidity">
+                        68%
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>🌬️</span>
+
+                    <p>Wind</p>
+
+                    <strong id="wind">
+                        12 km/h
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>🌡️</span>
+
+                    <p>Feels like</p>
+
+                    <strong id="feelsLike">
+                        31°
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="forecast-section">
+
+            <div class="section-title">
+
+                <div>
+                    <p class="label">NEXT FEW DAYS</p>
+                    <h2>Forecast</h2>
+                </div>
+
+            </div>
+
+
+            <div id="forecast" class="forecast">
+
+                <div class="forecast-card">
+
+                    <p>Fri</p>
+
+                    <span>🌤️</span>
+
+                    <strong>31°</strong>
+
+                    <small>25°</small>
+
+                </div>
+
+
+                <div class="forecast-card">
+
+                    <p>Sat</p>
+
+                    <span>☀️</span>
+
+                    <strong>32°</strong>
+
+                    <small>25°</small>
+
+                </div>
+
+
+                <div class="forecast-card">
+
+                    <p>Sun</p>
+
+                    <span>🌦️</span>
+
+                    <strong>29°</strong>
+
+                    <small>24°</small>
+
+                </div>
+
+
+                <div class="forecast-card">
+
+                    <p>Mon</p>
+
+                    <span>🌧️</span>
+
+                    <strong>28°</strong>
+
+                    <small>23°</small>
+
+                </div>
+
+
+                <div class="forecast-card">
+
+                    <p>Tue</p>
+
+                    <span>🌤️</span>
+
+                    <strong>30°</strong>
+
+                    <small>24°</small>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="recent-section">
+
+            <p class="label">RECENT SEARCHES</p>
+
+            <div id="recentSearches" class="recent-searches">
+
+                <button>Chennai</button>
+                <button>Bangalore</button>
+                <button>Coimbatore</button>
+
+            </div>
+
+        </section>
+        <p id="errorMessage" class="error-message"></p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
